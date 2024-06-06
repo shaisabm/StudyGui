@@ -18,5 +18,6 @@ class UserForm(ModelForm):
 class UserProfile(ModelForm):
     class Meta:
         model = Profile
-        fields = '__all__'
-        exclude = {'user'}
+        fields = ['profile_pic','bio']
+        exclude = ['user']
+

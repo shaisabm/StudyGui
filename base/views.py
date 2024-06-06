@@ -177,13 +177,15 @@ def deleteMessage(req, pk):
 def updateUser(req):
     user = req.user
     form = UserForm(instance=user)
+    profile = UserProfile(instance=user.profile)
 
     if req.method == "POST":
         form = UserForm(req.POST,instance=user)
         if form.is_valid():
             form.save()
             return redirect('profile',pk=user.id)
-    return render(req,'base/update-user.html',{'form':form})
+    context = {'form':form,'profile':profile}
+    return render(req,'base/update-user.html',context)
 
 def topicsPage(req):
     if req.GET.get('q') is not None:

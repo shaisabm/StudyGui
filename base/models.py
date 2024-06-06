@@ -3,9 +3,10 @@ from django.contrib.auth.models import User
 
 
 class Profile(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    profile_pic = models.ImageField(null=True,blank=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE,null=True)
+    profile_pic = models.ImageField(default='static/images/profile_pic/default.jpg',upload_to='static/images/profile_pic',null=True,blank=True)
     bio = models.TextField(null=True, blank=True)
+
 class Topic(models.Model):
     name = models.CharField(max_length=200)
 
