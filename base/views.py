@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.db.models import Q
-from .models import Room, Topic, Message
+from .models import Room, Topic, Message, Profile
 from .forms import RoomForm, UserForm, UserProfile
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -177,14 +177,18 @@ def deleteMessage(req, pk):
 def updateUser(req):
     user = req.user
     form = UserForm(instance=user)
-    profile = UserProfile(instance=user.profile)
+    profile_instance = Profile.objects.get(user_id=user.id)
+    profile_form = UserProfile(req.POST or None, req.FILES or None, instance=profile_instance)
 
     if req.method == "POST":
         form = UserForm(req.POST,instance=user)
-        if form.is_valid():
+        if form.is_valid() and profile_form.is_valid():
             form.save()
+            profile_form.save()
+
+
             return redirect('profile',pk=user.id)
-    context = {'form':form,'profile':profile}
+    context = {'form':form,'profile':profile_form,'user':user}
     return render(req,'base/update-user.html',context)
 
 def topicsPage(req):
