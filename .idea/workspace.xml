@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491fa286-a936-4086-870f-f8c21e039233" name="Changes" comment="No change was made.">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="491fa286-a936-4086-870f-f8c21e039233" name="Changes" comment="Initial Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/templates/base/old_profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/templates/base/update-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/update-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/api/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +103,9 @@
       <workItem from="1717638303166" duration="106000" />
       <workItem from="1717702417852" duration="1493000" />
       <workItem from="1717703918563" duration="4608000" />
+      <workItem from="1717803415996" duration="1747000" />
+      <workItem from="1717862549266" duration="86000" />
+      <workItem from="1717862700100" duration="2581000" />
     </task>
     <task id="LOCAL-00001" summary="Changed the venv">
       <option name="closed" value="true" />
@@ -132,7 +131,39 @@
       <option name="project" value="LOCAL" />
       <updated>1717637901137</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cleaned up the profile fields">
+      <option name="closed" value="true" />
+      <created>1717803599640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717803599640</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added enctype &quot;multipart/form-data&quot;">
+      <option name="closed" value="true" />
+      <created>1717803849528</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717803849528</updated>
+    </task>
+    <task id="LOCAL-00006" summary="imported Profile model to views">
+      <option name="closed" value="true" />
+      <created>1717803875133</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717803875133</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial Commit">
+      <option name="closed" value="true" />
+      <created>1717803887385</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717803887385</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +174,10 @@
     <MESSAGE value="Profile model migrations" />
     <MESSAGE value="git working fine" />
     <MESSAGE value="No change was made." />
-    <option name="LAST_COMMIT_MESSAGE" value="No change was made." />
+    <MESSAGE value="Cleaned up the profile fields" />
+    <MESSAGE value="Added enctype &quot;multipart/form-data&quot;" />
+    <MESSAGE value="imported Profile model to views" />
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
 </project>
