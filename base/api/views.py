@@ -17,7 +17,6 @@ def getRooms(req):
     rooms = Room.objects.all()
     serializer = RoomSerializer(rooms,many=True)
     return Response(serializer.data)
-
 @api_view(['GET'])
 def getRoom(req,pk):
     room = Room.objects.get(id=pk)
