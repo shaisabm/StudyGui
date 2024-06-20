@@ -75,6 +75,7 @@ def home(req):
         Q(topic__name__icontains=q) |
         Q(name__icontains=q) | Q(description__icontains=q))
 
+
     room_count = Room.objects.count()
     topics = Topic.objects.all()[0:4]
     topicsCount = Topic.objects.count()
@@ -190,6 +191,19 @@ def updateUser(req):
             return redirect('profile',pk=user.id)
     context = {'form':form,'profile':profile_form,'user':user}
     return render(req,'base/update-user.html',context)
+
+@login_required(login_url='login')
+def delete_user(request):
+    user = request.user
+    if request.method == 'POST':
+        default_user = User.objects.get(username='user_deleted')
+        Room.objects.filter(host = user).update(host=default_user)
+        Message.objects.filter(user=user).update(user=default_user)
+        user.delete()
+        return redirect('home')
+    return render(request,'base/delete.html',{'obj':user})
+
+
 
 def topicsPage(req):
     if req.GET.get('q') is not None:
