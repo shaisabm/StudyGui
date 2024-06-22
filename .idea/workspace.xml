@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="491fa286-a936-4086-870f-f8c21e039233" name="Changes" comment="Initial Commit">
+    <list default="true" id="491fa286-a936-4086-870f-f8c21e039233" name="Changes" comment="sqlite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/templates/base/delete_old.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/templates/base/update-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/base/update-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studygui/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/studygui/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +111,10 @@
       <workItem from="1717803415996" duration="1747000" />
       <workItem from="1717862549266" duration="86000" />
       <workItem from="1717862700100" duration="2581000" />
+      <workItem from="1717885704925" duration="905000" />
+      <workItem from="1718054900922" duration="1703000" />
+      <workItem from="1718289874742" duration="2221000" />
+      <workItem from="1718371147381" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="Changed the venv">
       <option name="closed" value="true" />
@@ -163,7 +172,47 @@
       <option name="project" value="LOCAL" />
       <updated>1717803887385</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Build an api to convert pdf to png">
+      <option name="closed" value="true" />
+      <created>1717885733969</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717885733969</updated>
+    </task>
+    <task id="LOCAL-00009" summary="api added">
+      <option name="closed" value="true" />
+      <created>1717885779821</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1717885779821</updated>
+    </task>
+    <task id="LOCAL-00010" summary="api added">
+      <option name="closed" value="true" />
+      <created>1717885914632</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717885914632</updated>
+    </task>
+    <task id="LOCAL-00011" summary="previous commit message correction &quot;build an api to access room info&quot;">
+      <option name="closed" value="true" />
+      <created>1717886007135</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717886007135</updated>
+    </task>
+    <task id="LOCAL-00012" summary="sqlite">
+      <option name="closed" value="true" />
+      <created>1718055407288</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718055407288</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +227,11 @@
     <MESSAGE value="Added enctype &quot;multipart/form-data&quot;" />
     <MESSAGE value="imported Profile model to views" />
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Build an api to convert pdf to png" />
+    <MESSAGE value="api added" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="previous commit message correction &quot;build an api to access room info&quot;" />
+    <MESSAGE value="sqlite" />
+    <option name="LAST_COMMIT_MESSAGE" value="sqlite" />
   </component>
 </project>
